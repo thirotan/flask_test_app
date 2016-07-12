@@ -15,4 +15,14 @@ This App is first application to use python that made from flask flamework.
 ```
 python first_app.py
 ```
-  
+
+## Test
+```
+# python test_first_app.py
+.
+----------------------------------------------------------------------
+Ran 1 test in 0.022s
+
+OK
+
+``` 
