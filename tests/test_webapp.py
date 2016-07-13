@@ -11,6 +11,10 @@ class TestApp(unittest.TestCase):
         response = self.ap.get('/')
         assert response.status_code == 200
 
+    def test_add(self):
+        response = self.ap.post('/add', data=dict(
+            name='test'), follow_redirects=True)
+        assert response.status_code == 200
 
 if  __name__ == '__main__':
     unittest.main()
