@@ -1,10 +1,10 @@
 from flask import Flask, render_template
 
-webapp = Flask(__name__)
+app = Flask(__name__)
 
-@webapp.route('/')
+@app.route('/')
 def hello_world():
-    return 'First App'
+    return render_template('index.html', name='First App')
 
 if __name__ == '__main__':
-    webapp.run(host='0.0.0.0')
+    app.run(host='0.0.0.0')
