@@ -18,10 +18,10 @@ python first_app.py
 
 ## Test
 ```
-# python test_first_app.py
+$ python tests/test_webapp.py 
 .
 ----------------------------------------------------------------------
-Ran 1 test in 0.022s
+Ran 1 test in 0.019s
 
 OK
 
