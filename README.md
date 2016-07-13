@@ -19,10 +19,5 @@ python first_app.py
 ## Test
 ```
 $ python tests/test_webapp.py 
-.
-----------------------------------------------------------------------
-Ran 1 test in 0.019s
-
-OK
 
 ``` 
