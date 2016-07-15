@@ -14,7 +14,7 @@ class TestApp(unittest.TestCase):
 
     def test_add(self):
         response = self.ap.post('/add', data=dict(
-            name='test'), follow_redirects=True)
+            comment='test'), follow_redirects=True)
         assert response.status_code == 200
         assert 'Hellotest!' in response.data
 
