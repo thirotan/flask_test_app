@@ -13,7 +13,7 @@ This App is first application to use python that made from flask flamework.
   
 ## Usage 
 ```
-python first_app.py
+python manage.py
 ```
 
 ## Test
