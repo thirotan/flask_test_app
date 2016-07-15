@@ -1,2 +1,3 @@
 *.pyc
 first_app/config.py
+first_app/webapp.db
