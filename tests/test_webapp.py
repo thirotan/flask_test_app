@@ -10,13 +10,13 @@ class TestApp(unittest.TestCase):
     def test_hello_world(self):
         response = self.ap.get('/')
         assert response.status_code == 200
-        assert 'First App' in response.data
+        assert 'Hello World!' in response.data
 
     def test_add(self):
         response = self.ap.post('/add', data=dict(
             comment='test'), follow_redirects=True)
         assert response.status_code == 200
-        assert 'Hellotest!' in response.data
+        assert 'Hello World!' in response.data
 
 if  __name__ == '__main__':
     unittest.main()

@@ -1,15 +1,14 @@
-<!doctype html>
-<title>Hello from Flask</title>
-{% if name %}
-<h1>Hello {{ name }}!</h1>
-{% else %}
-<h1>Hello World!</h1>
-{% endif %}
+{% extends "layout.html" %}
+{% block body %}
+  <h1>Hello World!</h1>
+  <a href='/entries'>Entry</a>
+  
+  <form action="{{ url_for('add_entry') }}" method="post" class="add-entry">
+    <dl>
+      <dt>Entry:
+      <dd><input type="text" size="30" name="comment">
+      <dd><input type="submit" value="Share">
+    </dl>
+  </form>
+{% endblock %}
 
-<form action="{{ url_for('add_entry') }}" method="post" class="add-entry">
-  <dl>
-    <dt>Entry:
-    <dd><input type="text" size="30" name="comment">
-    <dd><input type="submit" value="Share">
-  </dl>
-</form>
