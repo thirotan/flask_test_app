@@ -1,2 +1,3 @@
 Flask
-flask_SQLAlchemy 
+Flask-SQLAlchemy 
+Flask-Migrate

@@ -1,12 +1,12 @@
 import os
 from flask import Flask, render_template, request, url_for, redirect
 
-from first_app import app, db
+from . import app, db
 from first_app.models import Entry
 
 
 @app.route('/')
-def hello_world():
+def index():
     return render_template('index.html')
 
 @app.route('/add', methods=['POST'])
