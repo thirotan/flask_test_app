@@ -9,7 +9,7 @@ This App is first application to use python that made from flask flamework.
 ## Install
 ### to install library
 ```
- pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 ### to create a secret_key
 
@@ -32,3 +32,11 @@ python manage.py
 $ python tests/test_webapp.py 
 
 ``` 
+
+## Create Table
+```
+$ python
+>from 
+>
+>
+```
