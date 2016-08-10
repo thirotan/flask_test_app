@@ -1,5 +1,4 @@
-import os
-from flask import Flask, render_template, request, url_for, redirect
+from flask import render_template, request, url_for, redirect
 
 from . import app, db
 from first_app.models import Entry
